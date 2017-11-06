@@ -17,6 +17,10 @@ const dbRef = firebase.database().ref('users')
 // Unique key of child which is to be removed
 const ukey = '-KyHQAzZAawWSNJBaT49'
 
+// other ukeys, if you have already used above one, it wont exist anymore
+// const ukey = '-KyFlNYfidFI1zpWBPpK'
+// const ukey = '-KyFm0nofEbTuO--wucv'
+
 dbRef.child(ukey).remove()
 
 console.log("Data deleted successfully")
